@@ -284,7 +284,7 @@ class PHPMailer
      * SMTP password.
      * @var string
      */
-    public $Password = 'cursophp7';
+    public $Password = '<senha>';
 
     /**
      * SMTP auth type.

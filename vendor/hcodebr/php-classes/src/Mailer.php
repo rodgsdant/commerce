@@ -4,7 +4,7 @@ use Rain\Tpl;
 class Mailer {
 	
 	const USERNAME = "cursophp.rodgsdant@gmail.com";
-	const PASSWORD = "cursophp7";
+	const PASSWORD = "<senha>";
 	const NAME_FROM = "TecSilva";
 	private $mail;
 	public function __construct($toAddress, $toName, $subject, $tplName, $data = array())
