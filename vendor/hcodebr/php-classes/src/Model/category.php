@@ -58,7 +58,7 @@
 
   	$sql = new Sql();
 
-  	$sql->query("DELETE * FROM tb_categories WHERE idcategory = :idcategory", [
+  	$sql->query("DELETE  FROM tb_categories WHERE idcategory = :idcategory", [
         ':idcategory'=> $this->getidcategory()
 
   	]);

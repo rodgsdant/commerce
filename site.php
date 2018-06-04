@@ -160,5 +160,13 @@ $app->get("/checkout", function(){
       'address'=>$address->getValues()
 
     ]);
-})
+});
+$app->get("/login", function(){
+
+
+    $page = new Page();
+
+    $page->setTpl("login");
+
+});
  ?>
