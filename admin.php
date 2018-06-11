@@ -47,8 +47,6 @@ $app->get('/admin/logout',function(){
 $app->get("/admin/forgot", function(){
    
 
-  User::verifyLogin();
-
    $page = new PageAdmin([
    
    "header" =>false,
@@ -72,9 +70,6 @@ exit;
 
 $app->get("/admin/forgot/sent", function(){
 
-
-  User::verifyLogin();
-
      $page = new PageAdmin([
    
    "header" =>false,
@@ -87,8 +82,6 @@ $app->get("/admin/forgot/sent", function(){
 
 $app->get("/admin/forgot/reset", function(){
 
-
-  User::verifyLogin();
 
   $user = User::validForgotDecrypt($_GET["code"]);
 
@@ -108,8 +101,6 @@ $page = new PageAdmin([
 });
 $app->post("/admin/forgot/reset", function(){
 
-
-  User::verifyLogin();
 
   $forgot = User::validForgotDecrypt($_POST["code"]);
 
